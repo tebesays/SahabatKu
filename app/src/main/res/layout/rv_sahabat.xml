@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/klikmakan"
+        android:layout_width="match_parent"
+        android:background="@color/colorPutih"
+        android:layout_height="128dp"
+        android:paddingVertical="10dp"
+        >
+
+            <ImageView
+                android:id="@+id/gambarmakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/judulmakan"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="120dp"
+            android:text="NAMA"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/hargamakan"
+            android:layout_width="254dp"
+            android:layout_height="71dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:text="deskripsi"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judulmakan" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
